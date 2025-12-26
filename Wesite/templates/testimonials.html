@@ -1,0 +1,8 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <h2 style="margin-top:10px">Client testimonials</h2>
+  {% for t in notes %}
+    <div class="card" style="margin-top:12px"><p class="testimonial">"{{ t.text }}"</p><p style="text-align:right;font-weight:700">— {{ t.author }}</p></div>
+  {% endfor %}
+{% endblock %}

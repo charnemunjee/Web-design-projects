@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <h2 style="margin-top:10px">Contact Movesby_Meg</h2>
+  <div class="card contact-card">
+    <p><strong>Email:</strong> meg@movesbymeg.example (demo)</p>
+    <p><strong>Phone:</strong> +27 71 000 0000</p>
+    <p><strong>Location:</strong> Cape Town, South Africa</p>
+  </div>
+  <div class="card contact-card" style="margin-top:12px">
+    <h5>Send a message</h5>
+    <form method="post">
+      <div style="margin-bottom:8px"><input name="name" placeholder="Your name"></div>
+      <div style="margin-bottom:8px"><input name="email" placeholder="Your email"></div>
+      <div style="margin-bottom:8px"><textarea name="message" rows="5" placeholder="Message"></textarea></div>
+      <button class="btn-primary" type="submit">Send</button>
+    </form>
+  </div>
+{% endblock %}
