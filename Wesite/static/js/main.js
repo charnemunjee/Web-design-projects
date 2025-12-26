@@ -1,0 +1,1 @@
+// Placeholder for future JS (none required for demo)

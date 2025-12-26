@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movesby_Meg - Health & Wellness</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+        <div class="nav-links">
+          <a href="/">Home</a><a href="/clothing">VO2 max</a><a href="/recipes">Recipes</a><a href="/testimonials">Testimonials</a><a href="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div style="margin-top:12px;padding:10px;background:#0b2230;border-radius:8px;color:#bfefff">{{ messages[0] }}</div>
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+      
+<div class="footer" style="text-align:center;">
+
+</div>
+
+    </div>
+  </body>
+</html>

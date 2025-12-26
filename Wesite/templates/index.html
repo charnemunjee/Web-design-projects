@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <div class="header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div class="intro">
+        <h1>Movesby_Meg</h1>
+        <p class="smallmuted">Personal health & wellness trainer — strength, mobility, and nutrition coaching.</p>
+        <a class="btn-primary" href="/contact">Book a session</a>
+      </div>
+      <div>
+            <img  src="/static/images/Megan%20Screenshot.png" alt="Movesby_Meg">
+            <p> Bachelor of Sports Science, Psych Hons</p>
+            <p> University of Stellenbosch</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="grid" style="margin-top:20px">
+    <div class="card"><h3>Shop VO2 max</h3><p class="smallmuted">High-quality gym wear designed for performance. <a href="/clothing">See collection →</a></p></div>
+    <div class="card"><h3>Healthy Recipes</h3><p class="smallmuted">Simple, tasty and nutritious recipes. <a href="/recipes">View recipes →</a></p></div>
+    <div class="card"><h3>What clients say</h3><p class="smallmuted">Real results and transformations. <a href="/testimonials">Read testimonials →</a></p></div>
+    <div class="card"><h3>Contact</h3><p class="smallmuted">Questions about coaching or classes? <a href="/contact">Get in touch →</a></p></div>
+  </div>
+    <div class = "footer" style = "centered">
+        <h4> Powered by:</h4>
+        <img class="ai_chapter_simple-img" src="/static/images/AI Chapter Logo.png" alt="Powered by AI Chapter" style="width:150px;">
+    </div>
+
+{% endblock %}
